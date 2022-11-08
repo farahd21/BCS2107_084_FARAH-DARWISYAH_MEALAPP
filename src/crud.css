@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("bg.jpg");
+   
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+.title {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    background: none;
+}
+.title h2{
+  background: none;
+  text-align: center;
+  color: white;
+  text-decoration: solid;
+  text-transform: uppercase;
+  -webkit-text-stroke: thin;
+}
+.desc{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    background: none;
+    
+}
+.desc h3{
+    font-size: 16px;
+    color: white;
+    background: none;
+    text-align: center;
+}
+
+.hero{
+   
+    width: 100%;
+    
+    
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    margin-top: 2px;
+}
+span{
+    color: #ff6600;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color: #ff6600;
+    transition:  .3s;
+    cursor: pointer;
+
+}
+.meal-search-box{
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    width: 19rem;
+    border: 1px solid white;
+    border-radius: 28px;
+    
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--tenne-tawny);
+    color: var(--tenne-tawny);
+    border-top-left-radius: 100rem;
+    border-bottom-left-radius: 100rem;
+    background: white;
+}
+.search-control::placeholder{
+    color: var(--tenne-tawny);
+    font-size: 12px;
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    color: #fff;
+    border: 1px solid #ff6600;
+   
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.search-btn:hover{
+    background: var(--tenne-tawny-dark);
+    cursor: pointer;
+}
+.btn, h6 {
+    font-size: 16px;
+}
+.btn, h6:hover{
+    font-size: 18px;
+}
+.ingredient {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10px 100px;
+    padding: 20px;
+    border: 1px solid white;
+    background: none;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background: none;
+}
+form{
+    background: none;
+    width: 50%;
+    margin: auto;
+}
+.form-group{
+    background: none;
+}
+.form-group .form-control {
+    width: 100%;
+    min-height: 25px;
+    padding: 5px 10px;
+    line-height: 1.6;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 16px;
+    background: none;
+}
+.form-group .form-control:hover{
+    cursor: auto;
+}
+
+.form-group .form-control, label {
+    display: inline-block;
+    font-size: 13px;
+    color: white;
+    background: none;
+    font-size: 16px;
+}
+.button{
+    margin: auto;
+    background: none;
+    margin-bottom: 1000px;
+}
+.button .btn{
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+.button .btn:hover{
+    cursor: pointer;
+    font-size: 16px;
+}

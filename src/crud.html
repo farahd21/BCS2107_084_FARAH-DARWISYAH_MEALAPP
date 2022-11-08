@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="crud.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+  </head>
+  <body>
+
+    <!--Navigation bar-->
+    <div class="hero">
+      <nav>
+          <h2 class="logo">Meal <span>App</span></h2>
+          <ul>
+              <li><a href="Meal.html">Homepage</span></a></li>
+              <li id="style_footer"><a href="#"><span>Create Note</span></a></li>
+          </ul>
+      </nav>
+    </div>
+    
+    <!--Title-->
+    <div class="title">
+      <h2>Welcome to Grocery List Note</h2>
+
+    </div>
+
+    <!--Instructions for user-->
+    <div class="desc">
+      <h3>
+        
+        You can enter specific meal name and list of ingredients will be provided for you as a reference
+      </h3>
+      
+    </div>
+
+    <!--Serachbox-->
+    <div class = "meal-search-box">
+      <input type = "text" class = "search-control" placeholder="Example: New York Cheesecake" id = "meal_input">
+      <button  class = "search-btn btn" id = "search-btn" onclick="buttonClicked()">
+        <i class = "fas fa-search"></i>
+      </button>
+    </div>
+
+    
+      <!--display ingredients of the meal for user reference-->
+      <div class="ingredient">
+        <p id="display" >Ingredients : </p>
+
+      </div>
+      
+     
+
+      <br><br><br><br>
+
+
+      <!--CRUD form-->
+      <form>
+
+        <!--Enter File name in input box-->
+        <div class="form-group">
+          <label>Title</label>
+          <input id="fileName" type="text" class="form-control" placeholder="Example: GroceryList.txt">
+        </div>
+
+        <!--Enter note-->
+        <div class="form-group">
+          <label>Note</label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+
+        </div>
+      </form>
+
+      <!--Button for create, read, update and delete-->
+      <div class="button">
+        <button id="btnCreate" class="btn">Create</button>
+        <button id="btnRead" class="btn">Read</button>
+        <button id="btnUpdate" class="btn">Update</button>
+        <button id="btnDelete" class="btn">Delete</button>
+        
+
+      </div>
+      
+    
+    </div>
+
+    <script src="crud.js"></script> <!--fetch javascript file-->
+  </body>
+</html>
